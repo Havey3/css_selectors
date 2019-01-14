@@ -1,0 +1,66 @@
+header {
+    border: 1px solid goldenrod;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    padding: 10px;
+}
+
+header li a {
+    display: block;
+    padding: 8px;
+}
+
+.disabled {
+    background-color:grey;
+}
+
+a > .disabled {
+    background-color: purple;
+
+}
+
+.active {
+    color: yellow;
+}
+
+.parent div:nth-child(1) {
+    color: red;
+}
+.parent div:nth-child(3) {
+    color: blue;
+}
+.parent h4:nth-child(2) {
+    background-color: red;
+}
+
+.parent h4:nth-child(4) {
+    background-color: blue;
+}
+
+.grandparent h4 {
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.promo {
+    font-weight: bold;
+    color: gold;
+}
+
+input {
+    height: 25px;
+}
+/* 
+? ? Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag).
+Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.
+
+Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px.  */
